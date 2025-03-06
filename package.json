@@ -1,0 +1,20 @@
+{
+  "name": "wasm-bindgen-template",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "tsc": "tsc",
+    "build": "./build.sh && ./build-js.sh",
+    "babel": ""
+  },
+  "author": "owl352",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "tsc": "^2.0.4",
+    "typescript": "^5.8.2"
+  }
+}
