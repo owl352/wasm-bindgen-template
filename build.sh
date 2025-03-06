@@ -9,7 +9,7 @@ PROFILE_ARG="--profile ${CARGO_BUILD_PROFILE}"
 PROFILE=debug
 
 BUILD_COMMAND="cargo build --config net.git-fetch-with-cli=true --target=${TARGET} ${PROFILE_ARG}"
-BINDGEN_COMMAND="wasm-bindgen --out-dir=${OUTPUT_DIR} --target=bundler --omit-default-module-path ./target/${TARGET}/${PROFILE}/wasm_bindgen_template.wasm"
+BINDGEN_COMMAND="wasm-bindgen --out-dir=${OUTPUT_DIR} --target=web --omit-default-module-path ./target/${TARGET}/${PROFILE}/wasm_bindgen_template.wasm"
 
 if ! [[ -d ${OUTPUT_DIR} ]]; then
   mkdir -p "${OUTPUT_DIR}"
